@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://djucgldh3jbvf"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_01fqm"]
+[ext_resource type="Script" path="res://scripts/entity/static/static.gd" id="2_mog46"]
+
+[node name="Static" instance=ExtResource("1_01fqm")]
+script = ExtResource("2_mog46")

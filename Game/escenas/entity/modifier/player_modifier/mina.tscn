@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy8aso6pe6b5o"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_8bpec"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/mina.gd" id="2_a7ib2"]
+[ext_resource type="Texture2D" uid="uid://dtwmxu1p85fof" path="res://img/player_modifiers/MinaMarina.svg" id="3_h5ee6"]
+
+[node name="Mina" instance=ExtResource("1_8bpec")]
+mass = 5.0
+gravity_scale = 24.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("2_a7ib2")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(4.00001, 28)
+scale = Vector2(0.189987, 0.189987)
+texture = ExtResource("3_h5ee6")
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(0.75, -0.25)
+scale = Vector2(2.125, 2.125)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

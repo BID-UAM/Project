@@ -1,0 +1,153 @@
+[gd_scene load_steps=12 format=3 uid="uid://bdgeli5vj18j5"]
+
+[ext_resource type="Texture2D" uid="uid://dswu38t0utuxt" path="res://img/background/background.svg" id="1_002lm"]
+[ext_resource type="Texture2D" uid="uid://byepmkqccwak6" path="res://img/background/seaweed_back.svg" id="2_rrjhk"]
+[ext_resource type="Texture2D" uid="uid://bxj1o64dsbja" path="res://img/background/seaweed.svg" id="3_s4id5"]
+[ext_resource type="Texture2D" uid="uid://ccqi7n471urkj" path="res://img/background/rock2.svg" id="4_t47s3"]
+
+[sub_resource type="Animation" id="Animation_312x6"]
+length = 0.001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [6]
+}
+
+[sub_resource type="Animation" id="Animation_2cr7w"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rwiui"]
+_data = {
+"RESET": SubResource("Animation_312x6"),
+"idle": SubResource("Animation_2cr7w")
+}
+
+[sub_resource type="Animation" id="Animation_r35jl"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6fq0d"]
+_data = {
+"idle": SubResource("Animation_r35jl")
+}
+
+[sub_resource type="Animation" id="Animation_f4lix"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fac4i"]
+_data = {
+"idle": SubResource("Animation_f4lix")
+}
+
+[node name="Background" type="Node2D"]
+
+[node name="Background" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(700, 490)
+texture = ExtResource("1_002lm")
+
+[node name="Seaweed_back" type="Sprite2D" parent="Background2"]
+position = Vector2(-521, 173)
+scale = Vector2(0.419517, 0.419517)
+texture = ExtResource("2_rrjhk")
+vframes = 8
+frame = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed_back"]
+autoplay = "idle"
+speed_scale = 1.25
+libraries = {
+"": SubResource("AnimationLibrary_rwiui")
+}
+
+[node name="Seaweed1" type="Sprite2D" parent="Background2"]
+position = Vector2(-275.932, 276.733)
+scale = Vector2(0.638546, 0.638546)
+texture = ExtResource("3_s4id5")
+vframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed1"]
+autoplay = "idle"
+speed_scale = 1.25
+libraries = {
+"": SubResource("AnimationLibrary_6fq0d")
+}
+
+[node name="Seaweed2" type="Sprite2D" parent="Background2"]
+position = Vector2(445.662, 248.178)
+scale = Vector2(0.751971, 0.751971)
+texture = ExtResource("3_s4id5")
+flip_h = true
+vframes = 8
+frame = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed2"]
+autoplay = "idle"
+speed_scale = 1.25
+libraries = {
+"": SubResource("AnimationLibrary_fac4i")
+}
+
+[node name="Rock1" type="Sprite2D" parent="Background2"]
+position = Vector2(-263.704, 357.103)
+scale = Vector2(0.774442, 0.774442)
+texture = ExtResource("4_t47s3")
+
+[node name="Rock2" type="Sprite2D" parent="Background2"]
+position = Vector2(471.182, 342.167)
+scale = Vector2(0.939068, 0.939068)
+texture = ExtResource("4_t47s3")
+flip_h = true

@@ -1,0 +1,121 @@
+[gd_scene load_steps=6 format=3 uid="uid://b335245mddw20"]
+
+[ext_resource type="Script" path="res://scripts/glugluglu/ui/user_interface.gd" id="1_7xtrk"]
+[ext_resource type="PackedScene" uid="uid://bqdrvsr3a2coy" path="res://escenas/glugluglu/ui/heart.tscn" id="3_ca44e"]
+[ext_resource type="PackedScene" uid="uid://bjaheh6vatp8g" path="res://escenas/glugluglu/ui/xp.tscn" id="4_hh1qd"]
+
+[sub_resource type="Animation" id="Animation_e55xc"]
+resource_name = "fade"
+length = 4.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.7, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_op8g5"]
+_data = {
+"fade": SubResource("Animation_e55xc")
+}
+
+[node name="User Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1400.0
+offset_bottom = 103.0
+script = ExtResource("1_7xtrk")
+
+[node name="Layer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Hearts" parent="Layer" instance=ExtResource("3_ca44e")]
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 1631.0
+offset_bottom = 437.0
+
+[node name="XP" parent="Layer" instance=ExtResource("4_hh1qd")]
+offset_left = -373.0
+offset_right = 610.0
+
+[node name="FishCount" type="HBoxContainer" parent="Layer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 167.0
+offset_bottom = -13.0
+grow_vertical = 0
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="Layer/FishCount"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Peces Comidos:"
+horizontal_alignment = 1
+
+[node name="Count" type="Label" parent="Layer/FishCount"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 2
+
+[node name="Tutorial" type="VBoxContainer" parent="Layer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.0
+offset_top = -283.0
+offset_right = 205.0
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ComerTutorial" type="HBoxContainer" parent="Layer/Tutorial"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="ComerLabel" type="Label" parent="Layer/Tutorial/ComerTutorial"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.27451, 0.698039, 0.721569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Come con"
+
+[node name="ComerInput" type="Label" parent="Layer/Tutorial/ComerTutorial"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25098, 0.419608, 0.658824, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="InteractuarTutorial" type="HBoxContainer" parent="Layer/Tutorial"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="InteractuarLabel" type="Label" parent="Layer/Tutorial/InteractuarTutorial"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.27451, 0.698039, 0.721569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Interactúa con"
+
+[node name="InteractuarInput" type="Label" parent="Layer/Tutorial/InteractuarTutorial"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25098, 0.419608, 0.658824, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Layer/Tutorial"]
+libraries = {
+"": SubResource("AnimationLibrary_op8g5")
+}

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb4h5laafijdt"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_gbwut"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/modifier.gd" id="2_ltx0j"]
+
+[node name="Modifier" instance=ExtResource("1_gbwut")]
+script = ExtResource("2_ltx0j")

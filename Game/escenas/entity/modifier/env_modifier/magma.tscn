@@ -1,0 +1,91 @@
+[gd_scene load_steps=12 format=3 uid="uid://c75gt16ipt07"]
+
+[ext_resource type="PackedScene" uid="uid://by4yy8w0nckuy" path="res://escenas/entity/modifier/env_modifier/env_modifier.tscn" id="1_e5xhj"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/env_modifier/magma.gd" id="2_pfuoq"]
+[ext_resource type="Texture2D" uid="uid://bal430dnwye22" path="res://img/env_modifiers/rock.svg" id="3_0rgxr"]
+[ext_resource type="Shader" path="res://shaders/outer_outline.gdshader" id="3_ap8pm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qsaxw"]
+shader = ExtResource("3_ap8pm")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 0.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfp5e"]
+radius = 91.0494
+
+[sub_resource type="Gradient" id="Gradient_2im8c"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1e345"]
+gradient = SubResource("Gradient_2im8c")
+fill = 2
+fill_from = Vector2(0.509009, 1)
+fill_to = Vector2(0.2, 0)
+metadata/_snap_enabled = true
+
+[sub_resource type="Animation" id="Animation_i6dqf"]
+resource_name = "light_activation"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Layer/PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.8, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 10.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q27mo"]
+_data = {
+"light_activation": SubResource("Animation_i6dqf")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_axkul"]
+radius = 162.151
+
+[node name="Magma" instance=ExtResource("1_e5xhj")]
+position = Vector2(694, 611)
+freeze = true
+script = ExtResource("2_pfuoq")
+
+[node name="Sprite2D" parent="." index="0"]
+material = SubResource("ShaderMaterial_qsaxw")
+position = Vector2(-65.125, 23.54)
+scale = Vector2(0.0575041, 0.0575041)
+texture = ExtResource("3_0rgxr")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-66, 28)
+shape = SubResource("CircleShape2D_nfp5e")
+disabled = true
+
+[node name="Layer" type="CanvasLayer" parent="." index="2"]
+
+[node name="PointLight2D" type="PointLight2D" parent="Layer" index="0"]
+position = Vector2(700, 490)
+scale = Vector2(21.875, 15.3125)
+color = Color(0.784314, 0.239216, 0, 1)
+energy = 3.9
+blend_mode = 2
+texture = SubResource("GradientTexture2D_1e345")
+texture_scale = 50.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
+speed_scale = 0.5
+libraries = {
+"": SubResource("AnimationLibrary_q27mo")
+}
+
+[node name="InteractArea" type="Area2D" parent="." index="4"]
+position = Vector2(-48, 54)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea" index="0"]
+visible = false
+position = Vector2(-18, -31)
+shape = SubResource("CircleShape2D_axkul")
+
+[connection signal="body_entered" from="InteractArea" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="InteractArea" to="." method="_on_interact_area_body_exited"]

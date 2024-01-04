@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://mojo2nke7i55"]
+
+[ext_resource type="PackedScene" uid="uid://bb4h5laafijdt" path="res://escenas/entity/modifier/modifier.tscn" id="1_rbsti"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/player_modifier.gd" id="2_exvde"]
+
+[node name="PlayerModifier" instance=ExtResource("1_rbsti")]
+freeze_mode = 1
+script = ExtResource("2_exvde")
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

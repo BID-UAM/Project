@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd3me8csax48x"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_7arob"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/comida.gd" id="1_dshq3"]
+[ext_resource type="Texture2D" uid="uid://dh022ikq4kc2l" path="res://img/puntos/amarillo.svg" id="3_qd0oe"]
+
+[node name="Comida" instance=ExtResource("1_7arob")]
+gravity_scale = 1.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_dshq3")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_qd0oe")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
