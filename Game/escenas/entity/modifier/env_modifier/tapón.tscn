@@ -51,10 +51,10 @@ texture = ExtResource("4_6k6d2")
 hframes = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" index="0"]
-speed_scale = 2.0
 libraries = {
 "": SubResource("AnimationLibrary_7ecsy")
 }
+speed_scale = 2.0
 
 [node name="CollisionShape2D" parent="." index="1"]
 visible = true

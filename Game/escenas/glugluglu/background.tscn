@@ -107,11 +107,11 @@ vframes = 8
 frame = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed_back"]
-autoplay = "idle"
-speed_scale = 1.25
 libraries = {
 "": SubResource("AnimationLibrary_rwiui")
 }
+autoplay = "idle"
+speed_scale = 1.25
 
 [node name="Seaweed1" type="Sprite2D" parent="Background2"]
 position = Vector2(-275.932, 276.733)
@@ -120,11 +120,11 @@ texture = ExtResource("3_s4id5")
 vframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed1"]
-autoplay = "idle"
-speed_scale = 1.25
 libraries = {
 "": SubResource("AnimationLibrary_6fq0d")
 }
+autoplay = "idle"
+speed_scale = 1.25
 
 [node name="Seaweed2" type="Sprite2D" parent="Background2"]
 position = Vector2(445.662, 248.178)
@@ -135,11 +135,11 @@ vframes = 8
 frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Background2/Seaweed2"]
-autoplay = "idle"
-speed_scale = 1.25
 libraries = {
 "": SubResource("AnimationLibrary_fac4i")
 }
+autoplay = "idle"
+speed_scale = 1.25
 
 [node name="Rock1" type="Sprite2D" parent="Background2"]
 position = Vector2(-263.704, 357.103)

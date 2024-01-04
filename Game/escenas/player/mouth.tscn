@@ -38,10 +38,10 @@ texture = ExtResource("1_fv4gi")
 hframes = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Bite"]
-speed_scale = 1.2
 libraries = {
 "": SubResource("AnimationLibrary_02e6s")
 }
+speed_scale = 1.2
 
 [node name="MouthHitBox" type="CollisionPolygon2D" parent="."]
 visible = false

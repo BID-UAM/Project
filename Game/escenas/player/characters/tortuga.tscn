@@ -61,7 +61,7 @@ position = Vector2(1579.85, -74.1935)
 scale = Vector2(3.7345, 3.7345)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Skin" index="1"]
-autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_tpaj2")
 }
+autoplay = "idle"

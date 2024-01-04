@@ -44,10 +44,10 @@ hframes = 4
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D/Maelstrom" index="0"]
-autoplay = "Girar"
 libraries = {
 "": SubResource("AnimationLibrary_ju2v5")
 }
+autoplay = "Girar"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="1"]
 visible = false

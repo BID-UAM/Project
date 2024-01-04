@@ -62,7 +62,7 @@ position = Vector2(359.558, 12.2577)
 scale = Vector2(0.836567, 0.836567)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Skin" index="1"]
-autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_3gc80")
 }
+autoplay = "idle"

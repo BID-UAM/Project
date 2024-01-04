@@ -58,11 +58,11 @@ texture = ExtResource("2_di28o")
 vframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" index="0"]
-autoplay = "wobble"
-speed_scale = 0.7
 libraries = {
 "": SubResource("AnimationLibrary_0na0g")
 }
+autoplay = "wobble"
+speed_scale = 0.7
 
 [node name="CollisionShape2D" parent="." index="2"]
 visible = false

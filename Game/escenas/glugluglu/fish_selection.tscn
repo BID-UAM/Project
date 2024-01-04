@@ -201,10 +201,10 @@ vframes = 8
 frame = 14
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Fish1/Sprite2D"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_b1l7q")
 }
+autoplay = "swim"
 
 [node name="Fish2" type="Button" parent="HBoxContainer" groups=["FishSelection"]]
 custom_minimum_size = Vector2(130, 130)
@@ -222,10 +222,10 @@ vframes = 3
 frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Fish2/Sprite2D"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_dv6kk")
 }
+autoplay = "swim"
 
 [node name="Fish3" type="Button" parent="HBoxContainer" groups=["FishSelection"]]
 custom_minimum_size = Vector2(130, 130)
@@ -242,10 +242,10 @@ hframes = 8
 vframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Fish3/Sprite2D"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_xyvt6")
 }
+autoplay = "swim"
 
 [node name="Fish4" type="Button" parent="HBoxContainer" groups=["FishSelection"]]
 custom_minimum_size = Vector2(130, 130)
@@ -263,10 +263,10 @@ vframes = 2
 frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Fish4/Sprite2D"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_1485s")
 }
+autoplay = "swim"
 
 [node name="Fish5" type="Button" parent="HBoxContainer" groups=["FishSelection"]]
 custom_minimum_size = Vector2(130, 130)
@@ -284,10 +284,10 @@ vframes = 8
 frame = 10
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Fish5/Sprite2D"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_1j6is")
 }
+autoplay = "swim"
 
 [node name="Label" type="Label" parent="HBoxContainer"]
 layout_mode = 2

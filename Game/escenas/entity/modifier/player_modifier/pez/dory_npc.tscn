@@ -48,10 +48,10 @@ vframes = 3
 frame = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" index="0"]
-autoplay = "swim"
 libraries = {
 "": SubResource("AnimationLibrary_dv6kk")
 }
+autoplay = "swim"
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2(1, -8)
