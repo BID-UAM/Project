@@ -12,10 +12,18 @@ env = SConscript("godot-cpp/SConstruct")
 # - CPPDEFINES are for pre-processor defines
 # - LINKFLAGS are for linking flags
 
+BOOST_ROOT = "C:/Program Files (x86)/boost_1_84_0/"
+
+
 # tweak this if you want to use different folders, or more folders, to store your source code in.
-env.Append(CPPPATH=["src/", "include/", "tet-cpp-client-master/include/"])
+env.Append(CPPPATH=["src/", "include/", "tet-cpp-client-master/src/", "tet-cpp-client-master/include/", BOOST_ROOT])
+env.Append(LIBPATH=[os.path.join(BOOST_ROOT, "stage/lib")])
+
 env.Append(CPPDEFINES=['_HAS_AUTO_PTR_ETC=1'])
+env.Append(CCFLAGS = ['-EHsc', '-O2'])
+
 sources = Glob("src/*.cpp")
+sources += Glob("tet-cpp-client-master/src/*.cpp")
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(
