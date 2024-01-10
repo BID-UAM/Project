@@ -4,6 +4,8 @@
 MyGaze::MyGaze()
     : m_api(0) // verbose_level 0 (disabled)
 {
+    last_blink = -1;
+
     blinking = false;
     double_blinking = false;
     winking = false;
@@ -30,29 +32,27 @@ void MyGaze::on_gaze_data(gtl::GazeData const& gaze_data)
 
         // Comprobar pestañeo, doble pestañeo y guiño
         check_blink();
-        if (blinking) {
-            check_double_blink();
-        }
+        check_double_blink();
         check_wink();
     }
 }
 
-gtl::GazeData MyGaze::get_data() {
+gtl::GazeData MyGaze::get_data() const {
     return data;
 }
 
 void MyGaze::check_blink() {
     // TODO
+    int current_ms = data.time;
 
 
-    if (blinking && true) { // intervalo threshold para blink
-        /*last_blink = std::time(data.time.toInt());
-        strftime()*/
+    if (!blinking && true) { // Umbral para considerar pestañeo
+        blinking = true;
+        last_blink = current_ms;
     }
 }
 
 void MyGaze::check_double_blink() {
-    //difftime(, last_blink)
     // TODO
 
 }

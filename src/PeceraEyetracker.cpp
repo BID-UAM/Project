@@ -8,6 +8,7 @@ void PeceraEyetracker::_bind_methods() {
 
 PeceraEyetracker::PeceraEyetracker() {
 	// Initialize any variables here.
+	coordinates = Vector2(0, 0);
 
 	ClassDB::bind_method(D_METHOD("get_coordinates"), &PeceraEyetracker::get_coordinates);
 	ClassDB::bind_method(D_METHOD("set_coordinates", "new_coordinates"), &PeceraEyetracker::set_coordinates);

@@ -22,7 +22,8 @@ private:
     gtl::GazeApi m_api;
 	gtl::GazeData data;
 
-	time_t last_blink;
+	// Timestamp en ms
+	int last_blink;
 
 	bool blinking;
 	bool double_blinking;
@@ -32,7 +33,7 @@ public:
     MyGaze();
     ~MyGaze();
 
-	gtl::GazeData get_data();
+	gtl::GazeData get_data() const;
 
 	bool is_blinking() const;
 	bool is_double_blinking() const;

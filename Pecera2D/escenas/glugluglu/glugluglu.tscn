@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ca2vdc5do4rsd"]
 
 [ext_resource type="PackedScene" uid="uid://p2uuubtl13lq" path="res://escenas/glugluglu/main_menu.tscn" id="1_3ru12"]
-[ext_resource type="PackedScene" uid="uid://csh8vxli3a7ui" path="res://escenas/glugluglu/singleplayer.tscn" id="2_1w05u"]
+[ext_resource type="PackedScene" uid="uid://csh8vxli3a7ui" path="res://escenas/glugluglu/game.tscn" id="2_1w05u"]
 [ext_resource type="PackedScene" uid="uid://dmw3s1x17ou48" path="res://escenas/glugluglu/end_screen.tscn" id="2_l1xk2"]
 [ext_resource type="PackedScene" uid="uid://bdgeli5vj18j5" path="res://escenas/glugluglu/background.tscn" id="2_s3jj6"]
 [ext_resource type="PackedScene" uid="uid://dqdks5r06ky0q" path="res://escenas/glugluglu/fish_selection.tscn" id="3_c0bw0"]
@@ -24,12 +24,7 @@ func _on_main_menu_hidden():
 	$\"Fish Selection\".show()
 
 func _on_fish_selection_hidden():
-	if $\"Main Menu\".mode == \"Singleplayer\":
-		game = $\"Singleplayer\"
-	else:
-		# game = $\"Multiplayer\"
-		pass
-	game.start_game()
+	$\"Game\".start_game()
 	$\"User Interface\".restart()
 
 func _on_singleplayer_hidden():
@@ -49,7 +44,7 @@ script = SubResource("GDScript_06r3x")
 
 [node name="Background" parent="." instance=ExtResource("2_s3jj6")]
 
-[node name="Singleplayer" parent="." instance=ExtResource("2_1w05u")]
+[node name="Game" parent="." instance=ExtResource("2_1w05u")]
 visible = false
 
 [node name="End Screen" parent="." instance=ExtResource("2_l1xk2")]
@@ -69,7 +64,7 @@ offset_bottom = 980.0
 offset_right = 1400.0
 offset_bottom = 980.0
 
-[connection signal="hidden" from="Singleplayer" to="." method="_on_singleplayer_hidden"]
+[connection signal="hidden" from="Game" to="." method="_on_singleplayer_hidden"]
 [connection signal="hidden" from="End Screen" to="." method="_on_end_screen_hidden"]
 [connection signal="hidden" from="Fish Selection" to="." method="_on_fish_selection_hidden"]
 [connection signal="hidden" from="Main Menu" to="." method="_on_main_menu_hidden"]

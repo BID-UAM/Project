@@ -6,10 +6,15 @@ var pos: Vector2 = Vector2.ONE * 200
 var max_speed = 400  # Ajusta este valor para cambiar la velocidad máxima
 var delta_accum = 0
 
+var max_distance_accel = 300
+var mid_distance_accel = 200
+var min_distance_accel = 100
+
 var max_scale
 
 var rng = RandomNumberGenerator.new()
 var screen = DisplayServer.window_get_size()
+var eyeTarget
 
 var change_trajectory = false
 var has_bite = false
@@ -26,15 +31,25 @@ func _ready():
 
 	PlayerVariables.damage.connect(take_damage)
 	PlayerVariables.level_up.connect(level_up)
-
+	
+	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
+		eyeTarget = $"../../User Interface/Layer/PeceraEyetracker"
+		mid_distance_accel = 100
+		min_distance_accel = 50
 
 func _process(delta):
-	if PlayerVariables.control_mode == PlayerVariables.MOUSE:
-		process_mouse_movement(delta)
-	elif PlayerVariables.control_mode == PlayerVariables.KEYBOARD:
+	if PlayerVariables.control_mode == PlayerVariables.KEYBOARD:
 		process_keyboard_movement(delta)
+	elif PlayerVariables.control_mode == PlayerVariables.MOUSE:
+		process_target_movement(get_global_mouse_position(), delta)
 	elif PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
-		process_eyetracker_movement(delta)
+		process_target_movement(eyeTarget.get_coordinates(), delta)
+		if eyeTarget.is_double_blinking():
+			Input.action_press("bite")
+			Input.action_release("bite")
+		if eyeTarget.is_winking():
+			Input.action_press("interact")
+			Input.action_release("interact")
 
 	if Input.is_action_just_pressed("bite"):
 		if has_bite:
@@ -52,9 +67,8 @@ func _process(delta):
 		$Skin.modulate.a = 1
 
 
-func turn_to_mouse():
-	var mouse_pos = get_global_mouse_position()
-	var dir = mouse_pos - global_position
+func turn_to_target(target):
+	var dir = target - global_position
 	var tmp_rotation = dir.angle()
 	
 	var sprite_rotation = rad_to_deg(rotation)
@@ -80,17 +94,17 @@ func check_rotation_diff(new_rot: float):
 	if rot_diff > 35:
 		velocity *= 0.95
 
-func process_mouse_movement(delta):
-	var dir = turn_to_mouse()
+func process_target_movement(target, delta):
+	var dir = turn_to_target(target)
 	
 	var distance = dir.length()
 	
 	var acceleration
-	if distance > 300:  # Ajusta estos valores para cambiar las regiones de distancia
+	if distance > max_distance_accel:  # Ajusta estos valores para cambiar las regiones de distancia
 		acceleration = 400  # Aceleración alta
-	if distance > 200:  # Ajusta estos valores para cambiar las regiones de distancia
+	if distance > mid_distance_accel:  # Ajusta estos valores para cambiar las regiones de distancia
 		acceleration = 300  # Aceleración alta
-	elif distance > 100:
+	elif distance > min_distance_accel:
 		acceleration = 200  # Aceleración media
 	else:
 		acceleration = 100  # Aceleración baja
@@ -165,9 +179,6 @@ func process_keyboard_movement(delta):
 		$Skin/AnimationPlayer.play("swim")
 
 	move_and_slide()
-
-func process_eyetracker_movement(delta):
-	pass
 
 func level_up(levels):
 	if PlayerVariables.level <= 5:

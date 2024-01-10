@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://csh8vxli3a7ui"]
+
+[ext_resource type="Script" path="res://scripts/glugluglu/singleplayer.gd" id="1_wn56c"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_wn56c")

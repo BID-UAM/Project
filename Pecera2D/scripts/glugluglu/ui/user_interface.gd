@@ -16,7 +16,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
+		$Layer/PeceraEyetracker/Target.global_position = $Layer/PeceraEyetracker.get_coordinates()
 
 
 func update_heart_num(method, num):
@@ -78,6 +79,8 @@ func update_tutorial():
 		$Layer/Tutorial/InteractuarTutorial/InteractuarInput.text = "GUIÑO"
 
 func restart():
+	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
+		$Layer/PeceraEyetracker/Target.show()
 	$Layer.show()
 	$Layer/Tutorial/AnimationPlayer.stop()
 	$Layer/Tutorial/AnimationPlayer.play("fade")

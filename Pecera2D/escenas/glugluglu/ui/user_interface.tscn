@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b335245mddw20"]
+[gd_scene load_steps=7 format=3 uid="uid://b335245mddw20"]
 
 [ext_resource type="Script" path="res://scripts/glugluglu/ui/user_interface.gd" id="1_7xtrk"]
+[ext_resource type="Texture2D" uid="uid://jsejkdhik3q" path="res://img/target.svg" id="2_t1bgj"]
 [ext_resource type="PackedScene" uid="uid://bqdrvsr3a2coy" path="res://escenas/glugluglu/ui/heart.tscn" id="3_ca44e"]
 [ext_resource type="PackedScene" uid="uid://bjaheh6vatp8g" path="res://escenas/glugluglu/ui/xp.tscn" id="4_hh1qd"]
 
@@ -34,6 +35,15 @@ script = ExtResource("1_7xtrk")
 
 [node name="Layer" type="CanvasLayer" parent="."]
 visible = false
+
+[node name="PeceraEyetracker" type="PeceraEyetracker" parent="Layer"]
+coordinates = Vector2(990.682, 877.231)
+
+[node name="Target" type="Sprite2D" parent="Layer/PeceraEyetracker"]
+visible = false
+position = Vector2(686, 458)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_t1bgj")
 
 [node name="Hearts" parent="Layer" instance=ExtResource("3_ca44e")]
 offset_left = 15.0

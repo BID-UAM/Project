@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://p2uuubtl13lq"]
+[gd_scene load_steps=9 format=3 uid="uid://p2uuubtl13lq"]
 
 [ext_resource type="Script" path="res://scripts/glugluglu/main_menu.gd" id="1_gt5qq"]
-[ext_resource type="Texture2D" uid="uid://c2orohrgucakq" path="res://img/singleplayer.svg" id="2_4dq1q"]
 [ext_resource type="Shader" path="res://shaders/blur.gdshader" id="2_pi18x"]
 [ext_resource type="Texture2D" uid="uid://bl5f2ou5yedb5" path="res://img/title.png" id="2_xak2d"]
-[ext_resource type="Texture2D" uid="uid://dwqsjoa0wsdqh" path="res://img/multiplayer.svg" id="3_n7ilj"]
 [ext_resource type="Texture2D" uid="uid://d3kaojuam6jxw" path="res://img/exit.svg" id="4_omt20"]
+[ext_resource type="Texture2D" uid="uid://dm6vt6qbp7skq" path="res://img/play.svg" id="4_rmo35"]
 [ext_resource type="Texture2D" uid="uid://crdgxiwbk53ac" path="res://img/keyboard.svg" id="6_0mocq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_d6g1k"]
@@ -52,23 +51,13 @@ layout_mode = 2
 theme_override_constants/separation = 20
 alignment = 1
 
-[node name="Un jugador" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Jugar" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 40
-text = "Un jugador"
-icon = ExtResource("2_4dq1q")
-icon_alignment = 2
-expand_icon = true
-
-[node name="Multijugador" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-mouse_default_cursor_shape = 2
-theme_override_font_sizes/font_size = 40
-text = "Multijugador"
-icon = ExtResource("3_n7ilj")
+text = "Jugar"
+icon = ExtResource("4_rmo35")
 icon_alignment = 2
 expand_icon = true
 
@@ -90,7 +79,6 @@ icon = ExtResource("4_omt20")
 icon_alignment = 2
 expand_icon = true
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Un jugador" to="." method="_on_un_jugador_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Multijugador" to="." method="_on_multijugador_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Modo" to="." method="_on_modo_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
