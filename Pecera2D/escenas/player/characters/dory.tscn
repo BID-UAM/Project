@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=3 uid="uid://djfaa4yfakeqb"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0lanho0dkg" path="res://escenas/player/player.tscn" id="1_fj02n"]
+[ext_resource type="Texture2D" uid="uid://bq258bgtda015" path="res://img/dory.svg" id="2_714am"]
+
+[sub_resource type="Animation" id="Animation_tebtl"]
+resource_name = "bite"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.25, 0.3, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [16, 17, 18, 19, 20]
+}
+
+[sub_resource type="Animation" id="Animation_r34bc"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_6aagk"]
+resource_name = "swim"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_imhdl"]
+_data = {
+"bite": SubResource("Animation_tebtl"),
+"idle": SubResource("Animation_r34bc"),
+"swim": SubResource("Animation_6aagk")
+}
+
+[node name="Dory" instance=ExtResource("1_fj02n")]
+scale = Vector2(0.8, 0.8)
+
+[node name="BodyHitBox" parent="." index="0"]
+polygon = PackedVector2Array(-70, -100, -120, -53.3333, -38, 106.667, 38, 100, 122, -50, -2, -173.333)
+
+[node name="Skin" parent="." index="1"]
+position = Vector2(0, 0)
+scale = Vector2(0.183967, 0.183967)
+texture = ExtResource("2_714am")
+hframes = 8
+vframes = 3
+frame = 5
+
+[node name="Mouth" parent="Skin" index="0"]
+position = Vector2(442.481, 12.2577)
+scale = Vector2(1.4, 1.4)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Skin" index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_imhdl")
+}
+autoplay = "idle"

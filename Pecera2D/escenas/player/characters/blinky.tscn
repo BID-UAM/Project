@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1ymrs5qoqpg6"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0lanho0dkg" path="res://escenas/player/player.tscn" id="1_253q2"]
+[ext_resource type="Texture2D" uid="uid://6v2wuumbtkia" path="res://img/Blinky.svg" id="2_8s2gn"]
+
+[sub_resource type="Animation" id="Animation_ovo35"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_jib0x"]
+resource_name = "swim"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gtknf"]
+_data = {
+"idle": SubResource("Animation_ovo35"),
+"swim": SubResource("Animation_jib0x")
+}
+
+[node name="Blinky" instance=ExtResource("1_253q2")]
+
+[node name="BodyHitBox" parent="." index="0"]
+position = Vector2(-6.61719, -0.858592)
+scale = Vector2(0.511719, 0.307031)
+polygon = PackedVector2Array(-30, -63.3333, -59.374, -39.5446, -56, 86.6667, -20, 80, 22, 93.3333, 52, 76.6667, 90, 66.6667, 82, -13.3333, 55.9236, -62.3436, 4, -103.333)
+
+[node name="Skin" parent="." index="1"]
+position = Vector2(0, -7.45058e-09)
+scale = Vector2(0.245, 0.245)
+texture = ExtResource("2_8s2gn")
+hframes = 8
+vframes = 2
+frame = 8
+
+[node name="Mouth" parent="Skin" index="0"]
+position = Vector2(294.231, 16.3393)
+scale = Vector2(0.836737, 0.836737)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Skin" index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_gtknf")
+}
+autoplay = "idle"

@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://my2x6dtbhw42"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0lanho0dkg" path="res://escenas/player/player.tscn" id="1_hr0vt"]
+[ext_resource type="Texture2D" uid="uid://bdqehlca12q33" path="res://img/Nemo.svg" id="2_rvesd"]
+
+[sub_resource type="Animation" id="Animation_g1vbw"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [1, 3, 5, 7]
+}
+
+[sub_resource type="Animation" id="Animation_rstou"]
+resource_name = "swim"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 4, 6, 8, 10, 12, 14]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3gc80"]
+_data = {
+"idle": SubResource("Animation_g1vbw"),
+"swim": SubResource("Animation_rstou")
+}
+
+[node name="Nemo" instance=ExtResource("1_hr0vt")]
+
+[node name="BodyHitBox" parent="." index="0"]
+visible = false
+position = Vector2(-4, 1)
+scale = Vector2(0.476633, 0.28598)
+polygon = PackedVector2Array(-80, -63.3333, -94, -30, -104, 26.6667, -82, 63.3333, -50, 83.3333, -14, 96.6667, 22, 100, 44.0591, 101.406, 71.3337, 101.406, 86, 76.6667, 100.706, 62.9415, 115.393, 27.974, 102, -50, 88, -70, 70, -90, 40, -116.667, -8, -116.667, -42, -90)
+
+[node name="Skin" parent="." index="1"]
+position = Vector2(7.45058e-09, -5.96046e-08)
+scale = Vector2(0.22685, 0.22685)
+texture = ExtResource("2_rvesd")
+frame = 1
+
+[node name="Mouth" parent="Skin" index="0"]
+position = Vector2(359.558, 12.2577)
+scale = Vector2(0.836567, 0.836567)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Skin" index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_3gc80")
+}
+autoplay = "idle"

@@ -1,0 +1,397 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:22 (PROJECT)"
+    message: |
+      The system is: Windows - 10.0.22000 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+      Build started 09/01/2024 22:13:36.
+      
+      Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.20
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/3.28.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+      Build started 09/01/2024 22:13:38.
+      
+      Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.18
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/3.28.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-al1ocv"
+      binary: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-al1ocv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-al1ocv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f7fbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 09/01/2024 22:13:39.
+        
+        Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-al1ocv\\cmTC_f7fbd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f7fbd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-al1ocv\\Debug\\".
+          Creating directory "cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f7fbd.dir\\Debug\\\\" /Fd"cmTC_f7fbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f7fbd.dir\\Debug\\\\" /Fd"cmTC_f7fbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-al1ocv\\Debug\\cmTC_f7fbd.exe" /INCREMENTAL /ILK:"cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-al1ocv/Debug/cmTC_f7fbd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-al1ocv/Debug/cmTC_f7fbd.lib" /MACHINE:X64  /machine:x64 cmTC_f7fbd.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f7fbd.vcxproj -> C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-al1ocv\\Debug\\cmTC_f7fbd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f7fbd.dir\\Debug\\cmTC_f7fbd.tlog\\cmTC_f7fbd.lastbuildstate".
+        Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-al1ocv\\cmTC_f7fbd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.19
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-7fndsc"
+      binary: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-7fndsc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-7fndsc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1f9db.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 09/01/2024 22:13:41.
+        
+        Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-7fndsc\\cmTC_1f9db.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1f9db.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-7fndsc\\Debug\\".
+          Creating directory "cmTC_1f9db.dir\\Debug\\cmTC_1f9db.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1f9db.dir\\Debug\\cmTC_1f9db.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1f9db.dir\\Debug\\cmTC_1f9db.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1f9db.dir\\Debug\\\\" /Fd"cmTC_1f9db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1f9db.dir\\Debug\\\\" /Fd"cmTC_1f9db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-7fndsc\\Debug\\cmTC_1f9db.exe" /INCREMENTAL /ILK:"cmTC_1f9db.dir\\Debug\\cmTC_1f9db.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-7fndsc/Debug/cmTC_1f9db.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-7fndsc/Debug/cmTC_1f9db.lib" /MACHINE:X64  /machine:x64 cmTC_1f9db.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1f9db.vcxproj -> C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-7fndsc\\Debug\\cmTC_1f9db.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1f9db.dir\\Debug\\cmTC_1f9db.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1f9db.dir\\Debug\\cmTC_1f9db.tlog\\cmTC_1f9db.lastbuildstate".
+        Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-7fndsc\\cmTC_1f9db.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.17
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindBoost.cmake:2143 (find_package)"
+      - "CMakeLists.txt:36 (FIND_PACKAGE)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-jmdtu5"
+      binary: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-jmdtu5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-jmdtu5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_980c8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 09/01/2024 22:13:42.
+        
+        Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\cmTC_980c8.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_980c8.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\Debug\\".
+          Creating directory "cmTC_980c8.dir\\Debug\\cmTC_980c8.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_980c8.dir\\Debug\\cmTC_980c8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_980c8.dir\\Debug\\cmTC_980c8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_980c8.dir\\Debug\\\\" /Fd"cmTC_980c8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_980c8.dir\\Debug\\\\" /Fd"cmTC_980c8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\src.c"
+          src.c
+        C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\cmTC_980c8.vcxproj]
+        Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\cmTC_980c8.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\cmTC_980c8.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-jmdtu5\\cmTC_980c8.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.11
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindBoost.cmake:2143 (find_package)"
+      - "CMakeLists.txt:36 (FIND_PACKAGE)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-0fda2o"
+      binary: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-0fda2o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-0fda2o'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e2f6b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 09/01/2024 22:13:44.
+        
+        Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\cmTC_e2f6b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e2f6b.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\Debug\\".
+          Creating directory "cmTC_e2f6b.dir\\Debug\\cmTC_e2f6b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e2f6b.dir\\Debug\\cmTC_e2f6b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e2f6b.dir\\Debug\\cmTC_e2f6b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e2f6b.dir\\Debug\\\\" /Fd"cmTC_e2f6b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e2f6b.dir\\Debug\\\\" /Fd"cmTC_e2f6b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\Debug\\cmTC_e2f6b.exe" /INCREMENTAL /ILK:"cmTC_e2f6b.dir\\Debug\\cmTC_e2f6b.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-0fda2o/Debug/cmTC_e2f6b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-0fda2o/Debug/cmTC_e2f6b.lib" /MACHINE:X64  /machine:x64 cmTC_e2f6b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\cmTC_e2f6b.vcxproj]
+        Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\cmTC_e2f6b.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\cmTC_e2f6b.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-0fda2o\\cmTC_e2f6b.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.11
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindBoost.cmake:2143 (find_package)"
+      - "CMakeLists.txt:36 (FIND_PACKAGE)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-hpt8ky"
+      binary: "C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-hpt8ky"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-hpt8ky'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_22557.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 09/01/2024 22:13:45.
+        
+        Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\cmTC_22557.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_22557.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\Debug\\".
+          Creating directory "cmTC_22557.dir\\Debug\\cmTC_22557.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_22557.dir\\Debug\\cmTC_22557.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_22557.dir\\Debug\\cmTC_22557.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_22557.dir\\Debug\\\\" /Fd"cmTC_22557.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_22557.dir\\Debug\\\\" /Fd"cmTC_22557.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\Debug\\cmTC_22557.exe" /INCREMENTAL /ILK:"cmTC_22557.dir\\Debug\\cmTC_22557.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-hpt8ky/Debug/cmTC_22557.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/CMakeScratch/TryCompile-hpt8ky/Debug/cmTC_22557.lib" /MACHINE:X64  /machine:x64 cmTC_22557.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\cmTC_22557.vcxproj]
+        Done Building Project "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\cmTC_22557.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\cmTC_22557.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\acerv\\OneDrive\\Escritorio\\Repositories\\Project\\tet-cpp-client-master\\CMakeFiles\\CMakeScratch\\TryCompile-hpt8ky\\cmTC_22557.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.06
+        
+      exitCode: 1
+...

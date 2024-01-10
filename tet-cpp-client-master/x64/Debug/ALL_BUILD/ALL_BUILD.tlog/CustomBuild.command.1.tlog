@@ -1,0 +1,10 @@
+^C:\USERS\ACERV\ONEDRIVE\ESCRITORIO\REPOSITORIES\PROJECT\TET-CPP-CLIENT-MASTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master -BC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master --check-stamp-file C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

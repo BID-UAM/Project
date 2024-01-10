@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\CMakeFiles\1e2e4e11b8ae1aeff70334d8926ad990\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C7C225D9-D623-38BB-BF0C-498C4B89DF3C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

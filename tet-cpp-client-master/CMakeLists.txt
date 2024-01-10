@@ -1,3 +1,8 @@
+add_definitions("-DBOOST_ALLOW_DEPRECATED_HEADERS")
+
+SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "C:\Program Files (x86)\boost_1_84_0")
+SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "C:\Program Files (x86)\boost_1_84_0/lib")
+
 ##############################################################################
 #
 # C++ SDK - Cross-platform SDK for The Eye Tribe Tracker

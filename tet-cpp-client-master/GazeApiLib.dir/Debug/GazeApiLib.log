@@ -1,0 +1,28 @@
+﻿  Building Custom Rule C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeLists.txt
+  gazeapi.cpp
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi_socket.hpp(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/gazeapi.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi.cpp(327,23): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi_observable.hpp(42,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/gazeapi.cpp')
+  C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi_observable.hpp(42,24):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi.cpp(99,11):
+  	see reference to class template instantiation 'gtl::Observable<gtl::IConnectionStateListener>' being compiled
+  	C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi_observable.hpp(40,14):
+  	while compiling class template member function 'void gtl::Observable<gtl::IConnectionStateListener>::remove_observer(T &)'
+          with
+          [
+              T=gtl::IConnectionStateListener
+          ]
+  		C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi.cpp(724,34):
+  		see the first reference to 'gtl::Observable<gtl::IConnectionStateListener>::remove_observer' in 'gtl::GazeApi::remove_listener'
+  
+  gazeapi_parser.cpp
+  gazeapi_socket.cpp
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\src\gazeapi_socket.hpp(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/gazeapi_socket.cpp')
+  
+  Generating Code...
+  GazeApiLib.vcxproj -> C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\Debug\GazeApiLibD.lib

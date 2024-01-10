@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c70exompql7bh"]
-
-[ext_resource type="Script" path="res://scripts/env_state/env_state.gd" id="1_y8y3t"]
-
-[node name="EnvState" type="Node2D"]
-script = ExtResource("1_y8y3t")

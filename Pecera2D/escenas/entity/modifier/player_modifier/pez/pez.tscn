@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://qrw6wukr12r2"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_pwtbi"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/pez.gd" id="2_0v5jb"]
+[ext_resource type="Texture2D" uid="uid://bnh2faio4tup6" path="res://img/death.svg" id="3_n35op"]
+[ext_resource type="Shader" path="res://shaders/outer_outline.gdshader" id="3_o6nsf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fsjlf"]
+shader = ExtResource("3_o6nsf")
+shader_parameter/line_color = Color(0.741176, 0, 0, 1)
+shader_parameter/line_thickness = 0.0
+
+[sub_resource type="Animation" id="Animation_m2v5v"]
+resource_name = "dead"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Death:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3tkje"]
+_data = {
+"dead": SubResource("Animation_m2v5v")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tnrta"]
+radius = 49.9794
+height = 103.75
+
+[node name="Pez" instance=ExtResource("1_pwtbi")]
+collision_layer = 2
+collision_priority = 2.0
+mass = 10.0
+gravity_scale = 12.0
+lock_rotation = true
+script = ExtResource("2_0v5jb")
+speed = Vector2(200, 200)
+
+[node name="Sprite2D" parent="." index="0"]
+material = SubResource("ShaderMaterial_fsjlf")
+scale = Vector2(0.26, 0.26)
+
+[node name="Death" type="Sprite2D" parent="." index="1"]
+visible = false
+scale = Vector2(0.2125, 0.2125)
+texture = ExtResource("3_n35op")
+hframes = 5
+
+[node name="DeathPlayer" type="AnimationPlayer" parent="Death" index="0"]
+root_node = NodePath("../../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_3tkje")
+}
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(1.19209e-07, -9.53674e-07)
+rotation = 1.57425
+scale = Vector2(0.52028, 0.52028)
+shape = SubResource("CapsuleShape2D_tnrta")
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="3"]
+visible = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

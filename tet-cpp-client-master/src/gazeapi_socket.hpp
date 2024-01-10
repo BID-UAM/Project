@@ -12,6 +12,11 @@
 
 #include "gazeapi_observable.hpp"
 
+// This will eventually stop working when <boost/progress.hpp> is removed
+#define BOOST_TIMER_ENABLE_DEPRECATED
+
+#include <iostream>|
+
 #include <boost/asio.hpp>
 #include <boost/timer.hpp>
 #include <boost/thread.hpp>

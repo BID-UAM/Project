@@ -1,0 +1,3 @@
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/GazeApiLib.dir
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/ALL_BUILD.dir
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/tet-cpp-client-master/CMakeFiles/ZERO_CHECK.dir

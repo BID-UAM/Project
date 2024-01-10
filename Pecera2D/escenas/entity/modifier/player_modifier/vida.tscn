@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1224i6krhjhg"]
+
+[ext_resource type="PackedScene" uid="uid://ccnix08kslrde" path="res://escenas/entity/entity.tscn" id="1_84ibe"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/vida.gd" id="2_cqdkt"]
+[ext_resource type="Texture2D" uid="uid://cnwjacfmhyo7w" path="res://img/puntos/verde.svg" id="3_mt4hn"]
+
+[node name="Vida" instance=ExtResource("1_84ibe")]
+script = ExtResource("2_cqdkt")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_mt4hn")

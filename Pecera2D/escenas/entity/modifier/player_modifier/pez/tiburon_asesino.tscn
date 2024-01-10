@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhq6y0v35n7c2"]
+
+[ext_resource type="PackedScene" uid="uid://ceomp515ycxet" path="res://escenas/entity/modifier/player_modifier/pez/tiburon_npc.tscn" id="1_m6rny"]
+[ext_resource type="Shader" path="res://shaders/outer_outline.gdshader" id="2_d4wgs"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/player_modifier/tiburon_asesino.gd" id="2_ob0y3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hc0gb"]
+shader = ExtResource("2_d4wgs")
+shader_parameter/line_color = Color(0.509804, 0.0980392, 0.0980392, 1)
+shader_parameter/line_thickness = 20.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1qfbd"]
+radius = 71.1151
+height = 653.583
+
+[node name="TiburonAsesino" instance=ExtResource("1_m6rny")]
+collision_layer = 1
+collision_priority = 1.0
+mass = 200.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("2_ob0y3")
+
+[node name="Sprite2D" parent="." index="0"]
+material = SubResource("ShaderMaterial_hc0gb")
+position = Vector2(0, 1)
+scale = Vector2(0.326601, 0.326601)
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(-3, -4)
+shape = SubResource("CapsuleShape2D_1qfbd")
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]

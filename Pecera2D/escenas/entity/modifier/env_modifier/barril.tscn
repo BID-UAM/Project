@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://dqpvb52sk0ava"]
+
+[ext_resource type="PackedScene" uid="uid://by4yy8w0nckuy" path="res://escenas/entity/modifier/env_modifier/env_modifier.tscn" id="1_1xruo"]
+[ext_resource type="Texture2D" uid="uid://b3v6f7egnr2nb" path="res://img/env_modifiers/barrelGrey.svg" id="2_51rg6"]
+[ext_resource type="Script" path="res://scripts/entity/modifier/env_modifier/barril.gd" id="2_phl28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8s1q4"]
+size = Vector2(46, 60.9102)
+
+[sub_resource type="Gradient" id="Gradient_x75ay"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0xh08"]
+gradient = SubResource("Gradient_x75ay")
+fill_from = Vector2(0, 1)
+
+[node name="Barril" instance=ExtResource("1_1xruo")]
+gravity_scale = 24.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("2_phl28")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(1, 1.21921)
+scale = Vector2(0.104384, 0.104384)
+texture = ExtResource("2_51rg6")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(1, 1.54491)
+shape = SubResource("RectangleShape2D_8s1q4")
+metadata/_edit_group_ = true
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+visible = false
+position = Vector2(1.5, 1.92553)
+scale = Vector2(2.55, 3.09255)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="3"]
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+[node name="PointLight2D" type="PointLight2D" parent="ParallaxBackground/ParallaxLayer" index="0"]
+position = Vector2(700, 490)
+scale = Vector2(21.875, 15.3125)
+color = Color(0.2448, 0.68, 0.136, 1)
+energy = 10.0
+blend_mode = 2
+texture = SubResource("GradientTexture2D_0xh08")
+texture_scale = 50.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
