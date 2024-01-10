@@ -27,3 +27,6 @@ func _on_modo_pressed():
 		$MarginContainer/VBoxContainer/Modo.icon = load("res://img/eye.svg")
 		PlayerVariables.control_mode = PlayerVariables.MOUSE
 
+func _process(delta):
+	pass
+	#print($PeceraEyetracker.get_coordinates())

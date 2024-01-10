@@ -8,7 +8,14 @@ void PeceraEyetracker::_bind_methods() {
 
 PeceraEyetracker::PeceraEyetracker() {
 	// Initialize any variables here.
-	time_passed = 0.0;
+
+	ClassDB::bind_method(D_METHOD("get_coordinates"), &PeceraEyetracker::get_coordinates);
+	ClassDB::bind_method(D_METHOD("set_coordinates", "new_coordinates"), &PeceraEyetracker::set_coordinates);
+	ClassDB::add_property("PeceraEyetracker", PropertyInfo(Variant::VECTOR2, "coordinates"), "set_coordinates", "get_coordinates");
+	
+	ClassDB::bind_method(D_METHOD("is_blinking"), &PeceraEyetracker::is_blinking);
+	ClassDB::bind_method(D_METHOD("is_double_blinking"), &PeceraEyetracker::is_double_blinking);
+	ClassDB::bind_method(D_METHOD("is_winking"), &PeceraEyetracker::is_winking);
 }
 
 PeceraEyetracker::~PeceraEyetracker() {
@@ -16,31 +23,26 @@ PeceraEyetracker::~PeceraEyetracker() {
 }
 
 void PeceraEyetracker::_process(double delta) {
-	//time_passed += delta;
-
-	//Vector2 new_position = Vector2(10.0 + (10.0 * sin(time_passed * 2.0)), 10.0 + (10.0 * cos(time_passed * 1.5)));
-
-	//set_position(new_position);
-
-	x = gaze.data.avg.x;
-	y = gaze.data.avg.y;
+	gtl::GazeData data = gaze.get_data();
+	set_coordinates(Vector2(data.avg.x, data.avg.y));
 }
 
-//int main() {
-//    MyGaze g;
-//	gtl::GazeData data;
-//
-//	while (true) {
-//
-//		std::cout << "Smoothed coordinates: " << g.data.avg.x << ", " << g.data.avg.y << std::endl;
-//
-//		std::cout << "Left eye: " << g.data.lefteye.avg.x << ", " << g.data.lefteye.avg.y << std::endl;
-//
-//		std::cout << "Right eye: " << g.data.righteye.avg.x << ", " << g.data.righteye.avg.y << std::endl;
-//	}
-//
-//}
+void PeceraEyetracker::set_coordinates(Vector2 new_coordinates) {
+	coordinates = new_coordinates;
+}
 
-//int main() {
-//	printf("main");
-//}
+Vector2 PeceraEyetracker::get_coordinates() const {
+	return coordinates;
+}
+
+bool PeceraEyetracker::is_blinking() {
+	return gaze.is_blinking();
+}
+
+bool PeceraEyetracker::is_double_blinking() {
+	return gaze.is_double_blinking();
+}
+
+bool PeceraEyetracker::is_winking() {
+	return gaze.is_winking();
+}
