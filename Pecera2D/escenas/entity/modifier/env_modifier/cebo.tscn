@@ -49,7 +49,7 @@ func _on_area_2d_area_exited(area):
 		$Sprite2D.material.set_shader_parameter(\"line_thickness\", 0)
 
 func _on_input_event():
-	if interactable and Input.is_action_just_pressed(\"interact\"):
+	if interactable and (Input.is_action_just_pressed(\"interact\") or PlayerVariables.interacting):
 		spawn_ship()
 "
 

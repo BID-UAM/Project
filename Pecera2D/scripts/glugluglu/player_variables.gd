@@ -33,6 +33,7 @@ var is_safe = false
 var invulnerable = false
 var invulnerability_seconds = 3
 var hostile = false
+var interacting = false
 var camera_zoom = 1.4
 
 func reset_game():

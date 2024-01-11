@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	super(delta)
-	if Input.is_action_just_pressed("interact") and interactable:
+	if (Input.is_action_just_pressed("interact") or PlayerVariables.interacting) and interactable:
 		pull_out()
 
 	if pulling_out and not $Sprite2D/AnimationPlayer.is_playing():

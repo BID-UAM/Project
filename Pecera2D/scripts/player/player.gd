@@ -10,11 +10,13 @@ var max_distance_accel = 300
 var mid_distance_accel = 200
 var min_distance_accel = 100
 
+var deceleration_distance = 150
+
 var max_scale
 
 var rng = RandomNumberGenerator.new()
 var screen = DisplayServer.window_get_size()
-var eyeTarget
+var eyeTracker
 
 var change_trajectory = false
 var has_bite = false
@@ -33,10 +35,11 @@ func _ready():
 	PlayerVariables.level_up.connect(level_up)
 	
 	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
-		eyeTarget = $"../../User Interface/Layer/PeceraEyetracker"
+		eyeTracker = $"../../User Interface/Layer/PeceraEyetracker"
 		max_speed = 500
 		mid_distance_accel = 100
 		min_distance_accel = 50
+		deceleration_distance = 100
 
 func _process(delta):
 	if PlayerVariables.control_mode == PlayerVariables.KEYBOARD:
@@ -44,13 +47,11 @@ func _process(delta):
 	elif PlayerVariables.control_mode == PlayerVariables.MOUSE:
 		process_target_movement(get_global_mouse_position(), delta)
 	elif PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
-		if eyeTarget.is_winking():
-			Input.action_press("interact")
-			Input.action_release("interact")
-		if eyeTarget.is_double_blinking():
+		PlayerVariables.interacting = eyeTracker.is_winking()
+		if eyeTracker.is_double_blinking():
 			Input.action_press("bite")
 			Input.action_release("bite")
-		process_target_movement(eyeTarget.get_coordinates(), delta)
+		process_target_movement(eyeTracker.get_coordinates(), delta)
 
 	if Input.is_action_just_pressed("bite"):
 		if has_bite:
@@ -124,7 +125,7 @@ func process_target_movement(target, delta):
 		velocity = velocity.normalized() * max_speed
 	
 	# Si el sprite está cerca del ratón, reduce la velocidad progresivamente
-	if distance < 150:  # Ajusta este valor para cambiar la distancia de frenado
+	if distance < deceleration_distance:  # Ajusta este valor para cambiar la distancia de frenado
 		velocity *= 0.94  # Ajusta este valor para cambiar la rapidez de frenado
 
 	if rotation_degrees > 90 or rotation_degrees < -90:

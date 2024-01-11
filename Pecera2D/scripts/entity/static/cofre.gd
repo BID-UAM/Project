@@ -45,7 +45,7 @@ func _on_interact_area_body_exited(body):
 func _process(delta):
 	super(delta)
 	
-	if interactable and $Sprite2D.frame == 0 and Input.is_action_just_pressed("interact"):
+	if interactable and $Sprite2D.frame == 0 and (Input.is_action_just_pressed("interact") or PlayerVariables.interacting):
 		chest_open()
 
 

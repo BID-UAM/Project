@@ -20,10 +20,10 @@ func _process(delta):
 		$Layer/PeceraEyetracker/Target.global_position = $Layer/PeceraEyetracker.get_coordinates()
 
 	if PlayerVariables.debug:
-		print($Layer/PeceraEyetracker.is_blinking())
-		print($Layer/PeceraEyetracker.is_double_blinking())
-		print($Layer/PeceraEyetracker.is_winking())
-		print($Layer/PeceraEyetracker.get_coordinates())
+		print("Blinking:        " + str($Layer/PeceraEyetracker.is_blinking()))
+		print("Double blinking: " + str($Layer/PeceraEyetracker.is_double_blinking()))
+		print("Winking:         " + str($Layer/PeceraEyetracker.is_winking()))
+		print("Coords:          " + str($Layer/PeceraEyetracker.get_coordinates()))
 
 
 func update_heart_num(method, num):

@@ -22,7 +22,7 @@ func _on_interact_area_body_exited(body):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	super(delta)
-	if interactable and not activated and Input.is_action_just_pressed("interact"):
+	if interactable and not activated and (Input.is_action_just_pressed("interact") or PlayerVariables.interacting):
 		magma_time()
 
 func magma_time():
