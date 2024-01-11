@@ -1,5 +1,7 @@
 extends Node2D
 
+const debug = false
+
 const KEYBOARD = 0
 const MOUSE = 1
 const EYETRACKER = 2

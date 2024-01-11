@@ -24,6 +24,10 @@ private:
 
 	// Timestamp en ms
 	int last_blink;
+	int first_wink;
+
+	const int MIN_INTERVAL = 50;
+	const int MAX_DBLINK_INTERVAL = 500;
 
 	bool blinking;
 	bool double_blinking;
@@ -33,7 +37,12 @@ public:
     MyGaze();
     ~MyGaze();
 
+	void connect();
+	void disconnect();
+
 	gtl::GazeData get_data() const;
+
+	bool get_state(int mask) const;
 
 	bool is_blinking() const;
 	bool is_double_blinking() const;
@@ -56,10 +65,17 @@ namespace godot {
 		PeceraEyetracker();
 		~PeceraEyetracker();
 
+		void gaze_connect();
+		void gaze_disconnect();
+
 		void _process(double delta) override;
 
 		void set_coordinates(Vector2 new_coordinates);
 		Vector2 get_coordinates() const;
+		Vector2 get_lefteye_coordinates() const;
+		Vector2 get_righteye_coordinates() const;
+
+		bool get_state(int mask);
 
 		bool is_blinking();
 		bool is_double_blinking();

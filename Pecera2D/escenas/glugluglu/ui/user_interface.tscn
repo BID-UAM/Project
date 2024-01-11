@@ -37,11 +37,11 @@ script = ExtResource("1_7xtrk")
 visible = false
 
 [node name="PeceraEyetracker" type="PeceraEyetracker" parent="Layer"]
-coordinates = Vector2(990.682, 877.231)
+coordinates = Vector2(448.997, 353.317)
 
 [node name="Target" type="Sprite2D" parent="Layer/PeceraEyetracker"]
 visible = false
-position = Vector2(686, 458)
+position = Vector2(960, 540)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_t1bgj")
 

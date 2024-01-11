@@ -30,7 +30,7 @@ func set_end_screen(win):
 		$GridContainer/VictoriaLabel.hide()
 		$GridContainer/VictoriaPlaceholder.hide()
 		$GridContainer/VictoriaPoints.hide()
-		$GridContainer.add_theme_constant_override("v_separation", 90)
+		$GridContainer.add_theme_constant_override("v_separation", 85)
 
 	$GridContainer/PecesPoints.text = "X      %d PTS" % PTS_PER_FISH
 	$GridContainer/NivelPoints.text = "X    %d PTS" % PTS_PER_LVL

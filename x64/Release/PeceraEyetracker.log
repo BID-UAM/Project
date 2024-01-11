@@ -1,6 +1,380 @@
-﻿  Test.cpp
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  PeceraEyetracker.vcxproj -> C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\x64\Release\PeceraEyetracker.exe
+﻿  MyGaze.cpp
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(791,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(796,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(284,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(307,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(311,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(315,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(142,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(146,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(150,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(268,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(375,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(379,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(383,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(222,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(226,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(230,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(297,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(301,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(305,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(232,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(236,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(240,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\projection.hpp(101,26): warning C4244: 'return': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,28): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,60): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/MyGaze.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244: 'return': conversion from 'float' to 'const T', possible loss of data
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         with
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         [
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:             T=int32_t
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         ]
+  (compiling source file 'src/MyGaze.cpp')
+  C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(121,42):
+  	see reference to function template instantiation 'const T godot::SIGN<int32_t>(const T)' being compiled
+          with
+          [
+              T=int32_t
+          ]
+  
+  PeceraEyetracker.cpp
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(791,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(796,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(284,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(307,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(311,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(315,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(142,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(146,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(150,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(268,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(375,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(379,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(383,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(222,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(226,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(230,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(297,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(301,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(305,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(232,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(236,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(240,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\projection.hpp(101,26): warning C4244: 'return': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,28): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,60): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244: 'return': conversion from 'float' to 'const T', possible loss of data
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         with
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         [
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:             T=int32_t
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         ]
+  (compiling source file 'src/PeceraEyetracker.cpp')
+  C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(121,42):
+  	see reference to function template instantiation 'const T godot::SIGN<int32_t>(const T)' being compiled
+          with
+          [
+              T=int32_t
+          ]
+  
+  RegisterTypes.cpp
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(791,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(796,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(284,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(307,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(311,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2.hpp(315,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(142,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(146,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(150,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(268,13): warning C4244: 'initializing': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(375,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(379,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3.hpp(383,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(222,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(226,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector3i.hpp(230,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(297,17): warning C4244: 'argument': conversion from 'const double' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(301,17): warning C4244: 'argument': conversion from 'const int32_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4.hpp(305,17): warning C4244: 'argument': conversion from 'const int64_t' to 'const real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(232,20): warning C4244: 'argument': conversion from 'const int64_t' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(236,20): warning C4244: 'argument': conversion from 'const float' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector4i.hpp(240,20): warning C4244: 'argument': conversion from 'const double' to 'const int32_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\projection.hpp(101,26): warning C4244: 'return': conversion from 'double' to 'real_t', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,28): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\type_info.hpp(223,60): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+  (compiling source file 'src/RegisterTypes.cpp')
+  
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244: 'return': conversion from 'float' to 'const T', possible loss of data
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         with
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         [
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:             T=int32_t
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13): warning C4244:         ]
+  (compiling source file 'src/RegisterTypes.cpp')
+  C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\core\math.hpp(66,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include\godot_cpp\variant\vector2i.hpp(121,42):
+  	see reference to function template instantiation 'const T godot::SIGN<int32_t>(const T)' being compiled
+          with
+          [
+              T=int32_t
+          ]
+  
+godot-cpp.windows.debug.64.lib(memory.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(memory.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(error_macros.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(error_macros.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(string_name.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(string_name.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(char_string.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(char_string.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(wrapped.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(wrapped.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(node.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(node.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(string.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(string.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(godot.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(godot.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(class_db.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(class_db.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_byte_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_byte_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_float64_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_float64_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_string_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_string_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(node_path.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(node_path.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(main_loop.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(main_loop.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(window.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(window.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(resource.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(resource.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_arrays.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_arrays.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(variant.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(variant.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(ref_counted.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(ref_counted.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(editor_plugin_registration.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(editor_plugin_registration.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(method_bind.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(method_bind.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(class_db_singleton.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(class_db_singleton.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_int32_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_int32_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_int64_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_int64_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_float32_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_float32_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(texture2d.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(texture2d.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(style_box.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(style_box.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_vector2_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_vector2_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(rid.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(rid.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_vector3_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_vector3_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(projection.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(projection.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(callable.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(callable.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(signal.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(signal.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(dictionary.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(dictionary.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_color_array.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(packed_color_array.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(canvas_item.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(canvas_item.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(plane.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(plane.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(basis.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(basis.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(material.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(material.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(mesh.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(mesh.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(vector3.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(vector3.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(quaternion.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in MyGaze.obj
+godot-cpp.windows.debug.64.lib(quaternion.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in MyGaze.obj
+     Creating library C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\x64\Release\PeceraEyetracker.lib and object C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\x64\Release\PeceraEyetracker.exp
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(editor_plugin_registration.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(method_bind.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(error_macros.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(char_string.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(wrapped.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(class_db.obj) : error LNK2001: unresolved external symbol __imp__invalid_parameter
+godot-cpp.windows.debug.64.lib(object.cpp.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(editor_plugin_registration.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(method_bind.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(error_macros.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(char_string.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(wrapped.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+godot-cpp.windows.debug.64.lib(class_db.obj) : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\x64\Release\PeceraEyetracker.exe : fatal error LNK1120: 2 unresolved externals

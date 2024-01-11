@@ -26,22 +26,25 @@ script = ExtResource("1_gt5qq")
 
 [node name="Blur" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_d6g1k")
-position = Vector2(700, 490)
-scale = Vector2(1400, 980)
+position = Vector2(960, 540)
+scale = Vector2(1920, 1080)
 texture = SubResource("CanvasTexture_7kli3")
 
 [node name="Title" type="Sprite2D" parent="."]
-position = Vector2(700, 169)
-scale = Vector2(0.66, 0.66)
+position = Vector2(960, 220)
 texture = ExtResource("2_xak2d")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.262143
-anchor_top = 0.356122
+anchor_top = 0.384693
 anchor_right = 0.737857
-anchor_bottom = 0.67449
+anchor_bottom = 0.703061
+offset_left = 0.000457764
+offset_top = 44.5316
+offset_right = 0.000366211
+offset_bottom = 44.5316
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true

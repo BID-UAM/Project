@@ -34,6 +34,7 @@ func _ready():
 	
 	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
 		eyeTarget = $"../../User Interface/Layer/PeceraEyetracker"
+		max_speed = 500
 		mid_distance_accel = 100
 		min_distance_accel = 50
 
@@ -43,13 +44,13 @@ func _process(delta):
 	elif PlayerVariables.control_mode == PlayerVariables.MOUSE:
 		process_target_movement(get_global_mouse_position(), delta)
 	elif PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
-		process_target_movement(eyeTarget.get_coordinates(), delta)
-		if eyeTarget.is_double_blinking():
-			Input.action_press("bite")
-			Input.action_release("bite")
 		if eyeTarget.is_winking():
 			Input.action_press("interact")
 			Input.action_release("interact")
+		if eyeTarget.is_double_blinking():
+			Input.action_press("bite")
+			Input.action_release("bite")
+		process_target_movement(eyeTarget.get_coordinates(), delta)
 
 	if Input.is_action_just_pressed("bite"):
 		if has_bite:

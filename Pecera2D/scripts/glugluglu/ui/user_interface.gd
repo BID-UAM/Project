@@ -19,6 +19,12 @@ func _process(delta):
 	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
 		$Layer/PeceraEyetracker/Target.global_position = $Layer/PeceraEyetracker.get_coordinates()
 
+	if PlayerVariables.debug:
+		print($Layer/PeceraEyetracker.is_blinking())
+		print($Layer/PeceraEyetracker.is_double_blinking())
+		print($Layer/PeceraEyetracker.is_winking())
+		print($Layer/PeceraEyetracker.get_coordinates())
+
 
 func update_heart_num(method, num):
 	match method:
@@ -78,8 +84,15 @@ func update_tutorial():
 		$Layer/Tutorial/ComerTutorial/ComerInput.text = "PESTAÑEO DOBLE"
 		$Layer/Tutorial/InteractuarTutorial/InteractuarInput.text = "GUIÑO"
 
+func end_game():
+	$Layer.hide()
+	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
+		$Layer/PeceraEyetracker.gaze_disconnect()
+		$Layer/PeceraEyetracker/Target.hide()
+
 func restart():
 	if PlayerVariables.control_mode == PlayerVariables.EYETRACKER:
+		$Layer/PeceraEyetracker.gaze_connect()
 		$Layer/PeceraEyetracker/Target.show()
 	$Layer.show()
 	$Layer/Tutorial/AnimationPlayer.stop()

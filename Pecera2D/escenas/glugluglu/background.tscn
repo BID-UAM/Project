@@ -96,7 +96,8 @@ scroll_ignore_camera_zoom = true
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
 
 [node name="Background2" type="Sprite2D" parent="."]
-position = Vector2(700, 490)
+position = Vector2(960, 540)
+scale = Vector2(1.37143, 1.10204)
 texture = ExtResource("1_002lm")
 
 [node name="Seaweed_back" type="Sprite2D" parent="Background2"]

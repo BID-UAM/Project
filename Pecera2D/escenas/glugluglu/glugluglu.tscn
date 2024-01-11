@@ -24,12 +24,12 @@ func _on_main_menu_hidden():
 	$\"Fish Selection\".show()
 
 func _on_fish_selection_hidden():
-	$\"Game\".start_game()
 	$\"User Interface\".restart()
+	$\"Game\".start_game()
 
-func _on_singleplayer_hidden():
+func _on_game_hidden():
 	$\"End Screen\".show()
-	$\"User Interface/Layer\".hide()
+	$\"User Interface\".end_game()
 
 func _on_end_screen_hidden():
 	PlayerVariables.reset_game()
@@ -49,22 +49,23 @@ visible = false
 
 [node name="End Screen" parent="." instance=ExtResource("2_l1xk2")]
 visible = false
-offset_right = 1400.0
+offset_right = 1920.0
 offset_bottom = 980.0
 
 [node name="User Interface" parent="." instance=ExtResource("4_rl7aq")]
 visible = false
+offset_right = 1920.0
 
 [node name="Fish Selection" parent="." instance=ExtResource("3_c0bw0")]
 visible = false
-offset_right = 1400.0
-offset_bottom = 980.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 
 [node name="Main Menu" parent="." instance=ExtResource("1_3ru12")]
-offset_right = 1400.0
-offset_bottom = 980.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 
-[connection signal="hidden" from="Game" to="." method="_on_singleplayer_hidden"]
+[connection signal="hidden" from="Game" to="." method="_on_game_hidden"]
 [connection signal="hidden" from="End Screen" to="." method="_on_end_screen_hidden"]
 [connection signal="hidden" from="Fish Selection" to="." method="_on_fish_selection_hidden"]
 [connection signal="hidden" from="Main Menu" to="." method="_on_main_menu_hidden"]
