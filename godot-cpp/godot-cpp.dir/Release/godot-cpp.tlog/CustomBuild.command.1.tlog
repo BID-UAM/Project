@@ -1,0 +1,24 @@
+^C:\USERS\ACERV\ONEDRIVE\ESCRITORIO\REPOSITORIES\PROJECT\GODOT-CPP\GDEXTENSION\EXTENSION_API.JSON
+setlocal
+cd C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\acerv\AppData\Local\Programs\Python\Python312\python.exe -c "import binding_generator";" binding_generator.generate_bindings(\"gdextension/extension_api.json\", \"True\", \"64\", \"single\", \"C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp\")"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ACERV\ONEDRIVE\ESCRITORIO\REPOSITORIES\PROJECT\GODOT-CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp -BC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp --check-stamp-file C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

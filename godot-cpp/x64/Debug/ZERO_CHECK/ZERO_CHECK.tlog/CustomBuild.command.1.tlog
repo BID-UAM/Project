@@ -1,0 +1,10 @@
+^C:\USERS\ACERV\ONEDRIVE\ESCRITORIO\REPOSITORIES\PROJECT\GODOT-CPP\CMAKEFILES\A3781494C07D775685F99929B3571F8E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp -BC:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp/godot-cpp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

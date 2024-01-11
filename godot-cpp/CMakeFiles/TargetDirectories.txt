@@ -1,0 +1,3 @@
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp/CMakeFiles/godot-cpp.dir
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp/CMakeFiles/ALL_BUILD.dir
+C:/Users/acerv/OneDrive/Escritorio/Repositories/Project/godot-cpp/CMakeFiles/ZERO_CHECK.dir
