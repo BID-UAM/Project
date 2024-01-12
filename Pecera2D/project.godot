@@ -13,7 +13,8 @@ config_version=5
 config/name="Pecera2D"
 run/main_scene="res://escenas/glugluglu/glugluglu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://img/eye.svg"
+config/windows_native_icon="res://img/eye.ico"
 
 [autoload]
 

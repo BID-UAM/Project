@@ -1,9 +1,7 @@
 .vs/
 
-export/*.import
-
 # Godot 4+ specific ignores
-.godot/
+Pecera2D/.godot/
 
 # Godot-specific ignores
 .import/
