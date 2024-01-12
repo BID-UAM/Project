@@ -1,3 +1,5 @@
+## Consideraciones
+
 En el proyecto, interesan las siguientes carpetas:
 - src/ contiene la clase que se comunica con la API de The Eye Tribe por el puerto 6555, donde se implementan los algoritmos de detección de pestañeo, doble pestañeo y guiño en `MyGaze.cpp`; así como el nodo extensión de Godot que utiliza dicha funcionalidad en `PeceraEyetracker.cpp`. Dicho nodo se conecta al servidor con el método `gaze_connect()`.
 - include/ contiene las cabeceras de las clases y sus funciones implementadas en src/.
@@ -12,3 +14,14 @@ También interesa la solución de Visual Studio "PeceraEyetracker.sln", donde se
 Para compilar la librería, que se guardará en Pecera2D/bin/, ejecutar `scons platform=windows` en una terminal desde la raíz del proyecto. Se necesita:
 - La librería SCons de Python, instalable con `pip3 install scons`.
 - Especificar la librería de boost, instalable siguiendo pasos de https://github.com/EyeTribe/tet-cpp-client, en el fichero `SConstruct` de la carpeta raíz.
+
+## Referencias
+
+__The Eye Tribe__
+- TET C++ Client. https://github.com/EyeTribe/tet-cpp-client
+- TET C++ SDK Tutorial. https://theeyetribe.com/dev.theeyetribe.com/dev.theeyetribe.com/cpp/index.html
+- API Reference. https://theeyetribe.com/dev.theeyetribe.com/dev.theeyetribe.com/api/index.html
+
+__Godot__
+- GDExtension C++ Example. https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html
+- Visual Studio IDE Configuration. https://docs.godotengine.org/en/stable/contributing/development/configuring_an_ide/visual_studio.html
