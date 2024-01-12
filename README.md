@@ -11,4 +11,4 @@ En el proyecto, interesan las siguientes carpetas:
 También interesa la solución de Visual Studio "PeceraEyetracker.sln", donde se encuentran los proyectos juntados para visualizar más fácilmente.
 Para compilar la librería, que se guardará en Pecera2D/bin/, ejecutar `scons platform=windows` en una terminal desde la raíz del proyecto. Se necesita:
 - La librería SCons de Python, instalable con `pip3 install scons`.
-- Especificar la librería de boost, instalable siguiendo pasos de https://github.com/EyeTribe/tet-cpp-client, en el fichero SConstruct de la carpeta raíz.
+- Especificar la librería de boost, instalable siguiendo pasos de https://github.com/EyeTribe/tet-cpp-client, en el fichero `SConstruct` de la carpeta raíz.
