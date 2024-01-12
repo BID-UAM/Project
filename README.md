@@ -5,8 +5,8 @@ En el proyecto, interesan las siguientes carpetas:
 - __include/__ contiene las cabeceras de las clases y sus funciones implementadas en src/.
 - __Pecera2D/__ es el proyecto Godot del juego que incluye el DLL del proyecto para conectarse al Eye Tracker y mover al personaje con las coordenadas en pantalla.
   - El juego en formato Windows (PeceraEyetracker.exe) se encuentra comprimido en __Pecera2D/export/PeceraEyetracker.zip__, junto con la librería de enlace dinámico `libpeceraeyetracker.windows.template_release.x86_64.dll`.
-  - Pecera2D/project.godot es el proyecto Godot como tal, abrirlo en Godot.
-  - Para utilizar el Eye Tracker en el juego, se debe tener la EyeTribeUI ejecutada y el dispositivo conectado y calibrado. Además elegir "Usar Eye Tracker" en la segunda opción del menú principal.
+  - Pecera2D/project.godot es el fichero de descripción del proyecto Godot, ejecutable desde Godot.
+  - Para utilizar el Eye Tracker en el juego, se debe tener la aplicación __EyeTribe UI__ ejecutada y el dispositivo conectado y calibrado. Además, elegir "Usar Eye Tracker" en la segunda opción del menú principal.
 - __godot-cpp/__ incluye código fuente de Godot para compilar la librería de la extensión GDExtension.
 - __tet-cpp-client-master/__ incluye código de la API cliente para comunicarse con el servidor del Eye Tracker de The Eye Tribe.
 
