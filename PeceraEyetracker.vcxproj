@@ -72,11 +72,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>C:\Program Files %28x86%29\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\gen\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\gdextension;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\include;$(IncludePath)</IncludePath>
+    <IncludePath>godot-cpp\include;godot-cpp\gen\include;godot-cpp\gdextension;tet-cpp-client-master\include;include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LibraryPath>C:\Program Files %28x86%29\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\gen\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\godot-cpp\gdextension;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\tet-cpp-client-master\include;C:\Users\acerv\OneDrive\Escritorio\Repositories\Project\include;$(IncludePath)</IncludePath>
+    <IncludePath>godot-cpp\include;godot-cpp\gen\include;godot-cpp\gdextension;tet-cpp-client-master\include;include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
