@@ -4,7 +4,7 @@ En el proyecto, interesan las siguientes carpetas:
 - src/ contiene la clase que se comunica con la API de The Eye Tribe por el puerto 6555, donde se implementan los algoritmos de detección de pestañeo, doble pestañeo y guiño en `MyGaze.cpp`; así como el nodo extensión de Godot que utiliza dicha funcionalidad en `PeceraEyetracker.cpp`. Dicho nodo se conecta al servidor con el método `gaze_connect()`.
 - include/ contiene las cabeceras de las clases y sus funciones implementadas en src/.
 - Pecera2D/ es el proyecto Godot del juego que incluye el DLL del proyecto para conectarse al Eye Tracker y mover al personaje con las coordenadas en pantalla.
-  - El juego en formato Windows (PeceraEyetracker.exe) se encuentra comprimido en Pecera2D/export/PeceraEyetracker.zip, junto con la librería dinámica libpeceraeyetracker.windows.template_release.x86_64.dll.
+  - El juego en formato Windows (PeceraEyetracker.exe) se encuentra comprimido en Pecera2D/export/PeceraEyetracker.zip, junto con la librería de enlace dinámico `libpeceraeyetracker.windows.template_release.x86_64.dll`.
   - Pecera2D/project.godot es el proyecto Godot como tal, abrirlo en Godot.
   - Para utilizar el Eye Tracker en el juego, se debe tener la EyeTribeUI ejecutada y el dispositivo conectado y calibrado. Además elegir "Usar Eye Tracker" en la segunda opción del menú principal.
 - godot-cpp/ incluye código fuente de Godot para compilar la librería de la extensión GDExtension.
